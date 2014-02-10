@@ -14,8 +14,6 @@ Common Operations
 editor.session.getTextRange(editor.getSelectionRange());
 ```
 
-```
-
 -Insert at cursor:
 
 ```js

@@ -1,79 +1,73 @@
-ace_common_operations_zh
+ace编辑器常用操作（中文版） | ace_common_operations_zh
 ========================
-Common Operations
+常用操作
 
-- Set and get content:
+- 设置内容/获取内容:
 
 ```js
-  editor.setValue("the new text here"); // or session.setValue
-  editor.getValue(); // or session.getValue
+  editor.setValue("新的内容"); // 或 session.setValue
+  editor.getValue(); // 或 session.getValue
 ```
-- Get selected text:
+- 获取被选定文本:
 
 ```js
 editor.session.getTextRange(editor.getSelectionRange());
 ```
 
--Insert at cursor:
+-在光标处添加内容:
 
 ```js
-editor.insert("Something cool");
+editor.insert("新的内容");
 ```
 
-Get the current cursor line and column:
+获取光标所在行的内容:
 
 ```js
 editor.selection.getCursor();
 ```
-- Go to a line:
+- 跳转到指定行:
 
 ```js
-editor.gotoLine(lineNumber);
+editor.gotoLine(行数);
 ```
 
-- Get total number of lines:
+- 获取文本总行数:
 
 ```js
 editor.session.getLength();
 ```
 
-- Set the default tab size:
+- 设置缩进长度:
 
 ```js
 editor.getSession().setTabSize(4);
 ```
 
-- Use soft tabs:
+- 设置自动缩进:
 
 ```js
 editor.getSession().setUseSoftTabs(true);
 ```
 
-- Set the font size:
+- 设置字体大小:
 
 ```js
 document.getElementById('editor').style.fontSize='12px';
 ```
 
-- Toggle word wrapping:
+- 设置代码折叠:
 
 ```js
 editor.getSession().setUseWrapMode(true);
 ```
 
-- Set line highlighting:
+- 设置光标所在行高亮:
 
 ```js
 editor.setHighlightActiveLine(false);
 ```
 
-- Set the print margin visibility:
-
-```js
-editor.setShowPrintMargin(false);
-```
-
-- Set the editor to read-only:
+- 设置内容只读:
 
 ```js
 editor.setReadOnly(true);  // false to make it editable
